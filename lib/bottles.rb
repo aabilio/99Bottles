@@ -1,8 +1,8 @@
 class Bottles
   def verse(count)
     verse = <<-VERSE
-99 bottles of beer on the wall, 99 bottles of beer.
-Take one down and pass it around, 98 bottles of beer on the wall.
+#{count} bottles of beer on the wall, #{count} bottles of beer.
+Take one down and pass it around, #{count - 1} bottles of beer on the wall.
 VERSE
     verse
   end
