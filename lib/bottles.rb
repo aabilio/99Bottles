@@ -3,6 +3,13 @@ class Bottles
     [first_sentence(count), second_sentence(count)].join()
   end
 
+  def verses(from, to)
+    from
+      .downto(to)
+      .map { |count| verse(count) }
+      .join("\n")
+  end
+
   private
 
   def first_sentence(count)
