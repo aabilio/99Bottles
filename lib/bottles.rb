@@ -3,7 +3,7 @@ class Bottles
     [first_sentence(count), second_sentence(count)].join()
   end
 
-  def verses(from, to)
+  def verses(from = 99, to = 0)
     from
       .downto(to)
       .map { |count| verse(count) }
